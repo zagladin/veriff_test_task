@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { ToastContainer } from 'react-toastify';
+import styles from './App.module.scss';
+import 'react-toastify/dist/ReactToastify.css';
+import CheckingToolContainer
+  from './Containers/CheckingToolContainer/CheckingToolContainer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.App}>
+      <CheckingToolContainer />
+      <ToastContainer
+        position="top-right"
+        autoClose={3500}
+        hideProgressBar
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable={false}
+        pauseOnHover
+      />
     </div>
   );
 }

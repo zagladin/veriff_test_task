@@ -1,0 +1,24 @@
+.infoScreenWrapper {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  height: 44px;
+  padding: 12px;
+  font-size: 26px;
+
+  & > div {
+    display: inline;
+
+    &:first-child {
+      color: #09e91a;
+      font-size: 24px;
+      margin-right: 6px;
+    }
+  }
+
+  & > button {
+    width: 100%;
+    max-width: 130px;
+    margin: 12px auto;
+  }
+}

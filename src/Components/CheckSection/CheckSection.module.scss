@@ -1,0 +1,48 @@
+.checkButtonWrapper {
+  width: 100%;
+  height: auto;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+
+  &:hover, &:focus {
+    background-color: var(--highlight-color);
+    cursor: pointer;
+  }
+
+  .description {
+    font-size: 15px;
+    line-height: 120%;
+    color: #2b2d2d;
+    margin-bottom: 12px;
+    text-align: left;
+  }
+
+  .buttons {
+    display: flex;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+
+    button:first-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    button:last-child {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}
+
+.disabled {
+  filter: grayscale(1);
+
+  &:hover, &:focus {
+    background-color: #FFF;
+    cursor: auto;
+  }
+}
+
+

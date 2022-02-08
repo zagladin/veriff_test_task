@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with one class 1`] = `
+<button
+  className="checkButton"
+  disabled={false}
+  onClick={[Function]}
+>
+  Test for button
+</button>
+`;
+
+exports[`renders correctly with two classes 1`] = `
+<button
+  className="checkButton inactive"
+  disabled={false}
+  onClick={[Function]}
+>
+  Test for button
+</button>
+`;

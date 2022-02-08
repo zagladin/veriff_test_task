@@ -1,0 +1,23 @@
+.checkingToolContainer {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  min-height: 500px;
+  height: auto;
+  padding: 24px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  margin: 48px auto;
+  background-color: #FFF;
+
+  @media(max-width: 850px) {
+    max-width: 360px;
+  }
+
+  & > button {
+    margin: 24px 0 0 auto;
+  }
+}
