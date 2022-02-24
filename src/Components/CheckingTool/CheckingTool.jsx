@@ -24,9 +24,8 @@ const CheckingTool = (
 
   const checkForm = useCallback(
     () => results.some((result) => result.value === 'No')
-          || (results.length === checklist?.length
-              && results.every((item) => item.value === 'Yes')),
-    [checklist?.length, results],
+          || results.every((item) => item.value === 'Yes'),
+    [results],
   );
 
   const handleClick = useCallback((value, id, index) => {

@@ -23,7 +23,7 @@ const CheckSection = (
   const handleClick = useCallback((value) => {
     setSelectedState(value === 'Yes');
     onClick(value);
-  }, [disabled, onClick]);
+  }, [onClick]);
 
   const handleDigits = useCallback((event) => {
     if (event.key === '1') {
@@ -65,8 +65,10 @@ const CheckSection = (
   useEffect(() => {
     if (disabled) {
       onClick(null);
+    } else {
+      return null;
     }
-  }, []);
+  }, [disabled]);
 
   return (
     <div
